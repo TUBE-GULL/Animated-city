@@ -1,0 +1,85 @@
+ .sun {
+     width: 100%;
+     height: 50%;
+     position: absolute;
+     left: 0;
+     bottom: -30%;
+     width: 10em;
+     height: 10em;
+     margin-left: -2.5em;
+     margin-top: 0;
+     background: orangered;
+     border-radius: 50%;
+     box-shadow: 0 0 20px orange;
+     animation: 30s infinite linear;
+     animation-name: sun-move, sun-color;
+ }
+
+ @keyframes sun-move {
+     0% {}
+
+     10% {
+         margin-left: -4.5em;
+     }
+
+     20% {
+         margin-left: -5.5em;
+     }
+
+     30% {
+         margin-left: -6em;
+     }
+
+     40% {
+         margin-left: -4.5em;
+     }
+
+     50% {
+         left: 50%;
+         bottom: 75%;
+         width: 5em;
+         height: 5em;
+         margin-left: -2.5em;
+     }
+
+     60% {
+         margin-left: 1.5em;
+     }
+
+     70% {
+         margin-left: 3.5em;
+     }
+
+     80% {
+         margin-left: 2.5em;
+     }
+
+     90% {
+         margin-left: 1em;
+     }
+
+     100% {
+         left: 98%;
+         margin-left: -2.5em;
+     }
+ }
+
+ @keyframes sun-color {
+     20% {
+         background: orange;
+     }
+
+     40% {
+         background: gold;
+         box-shadow: 0 0 35px gold;
+     }
+
+     60% {
+         background: yellow;
+         box-shadow: 0 0 35px yellow;
+     }
+
+     80% {
+         background: orange;
+     }
+ }

@@ -1,0 +1,275 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 1;
+}
+main .content {
+  z-index: 3;
+  width: 30%;
+  margin-top: 50%;
+  padding: 2%;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+main .content h1 {
+  text-align: center;
+  font-size: 40px;
+}
+
+.sun {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  width: 10em;
+  height: 10em;
+  margin-left: -2.5em;
+  margin-top: 0;
+  background: orangered;
+  border-radius: 50%;
+  box-shadow: 0 0 20px orange;
+  animation: 30s infinite linear;
+  animation-name: sun-move, sun-color;
+}
+
+@keyframes sun-move {
+  10% {
+    margin-left: -4.5em;
+  }
+  20% {
+    margin-left: -5.5em;
+  }
+  30% {
+    margin-left: -6em;
+  }
+  40% {
+    margin-left: -4.5em;
+  }
+  50% {
+    left: 50%;
+    bottom: 75%;
+    width: 5em;
+    height: 5em;
+    margin-left: -2.5em;
+  }
+  60% {
+    margin-left: 1.5em;
+  }
+  70% {
+    margin-left: 3.5em;
+  }
+  80% {
+    margin-left: 2.5em;
+  }
+  90% {
+    margin-left: 1em;
+  }
+  100% {
+    left: 98%;
+    margin-left: -2.5em;
+  }
+}
+@keyframes sun-color {
+  20% {
+    background: orange;
+  }
+  40% {
+    background: gold;
+    box-shadow: 0 0 35px gold;
+  }
+  60% {
+    background: yellow;
+    box-shadow: 0 0 35px yellow;
+  }
+  80% {
+    background: orange;
+  }
+}
+.city {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: url(/img/3042-1[Converted].png) repeat-x;
+  background-position: 0 0;
+  background-size: auto 100%;
+}
+
+.animated-city {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: steelblue;
+  box-shadow: 0 -400px 300px -300px orangered inset;
+  animation: sky-change 30s infinite linear;
+}
+@keyframes sky-change {
+  0% {
+    background: darkslateblue;
+  }
+  50% {
+    background: skyblue;
+    box-shadow: 0 -700px 300px -300px steelblue inset;
+  }
+  85% {
+    background: darkslateblue;
+    box-shadow: 0 -800px 300px -300px rgb(250, 108, 56) inset;
+  }
+  100% {
+    background: darkslateblue;
+  }
+}
+
+.car_rigth_one {
+  background: url(/img/cars/pack_cars_right/right_green_car.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  left: -10%;
+  animation: animate_car_rigth_one 10s linear infinite;
+  z-index: 5;
+}
+
+@keyframes animate_car_rigth_one {
+  0% {
+    transform: translatex(0%);
+  }
+  90%, 100% {
+    transform: translatex(120vw);
+  }
+}
+.car_rigth_two {
+  background: url(/img/cars/pack_cars_right/right_blue_car.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  left: -10%;
+  animation: animate_car_rigth_two 12s linear infinite;
+  z-index: 5;
+}
+
+@keyframes animate_car_rigth_two {
+  0% {
+    transform: translatex(0%);
+  }
+  90%, 100% {
+    transform: translatex(119vw);
+  }
+}
+.car_rigth_three {
+  background: url(/img/cars/pack_cars_right/right_red_car.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 0;
+  left: -50%;
+  animation: animate_car_rigth_three 15s linear infinite;
+  z-index: 5;
+}
+
+@keyframes animate_car_rigth_three {
+  0% {
+    transform: translatex(0%);
+  }
+  90%, 100% {
+    transform: translatex(160vw);
+  }
+}
+.car_left_one {
+  background: url(/img/cars/pack_cars_left/left_grey_car.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 35px;
+  right: -10%;
+  animation: animate_car_left_one 13s linear infinite;
+  z-index: 4;
+}
+
+@keyframes animate_car_left_one {
+  0% {
+    transform: translatex(0%);
+  }
+  90%, 100% {
+    transform: translatex(calc(-200vw + 200px));
+  }
+}
+.car_left_two {
+  background: url(/img/cars/pack_cars_left/left_red_car.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 35px;
+  right: -10%;
+  animation: animate_car_left_two 17s linear infinite;
+  z-index: 4;
+}
+
+@keyframes animate_car_left_two {
+  0% {
+    transform: translatex(0%);
+  }
+  90%, 100% {
+    transform: translatex(calc(-200vw + 200px));
+  }
+}
+.car_left_three {
+  background: url(/img/cars/pack_cars_left/left_blue_car.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-width: 200px;
+  width: 10%;
+  height: 10%;
+  position: fixed;
+  bottom: 35px;
+  right: -15%;
+  animation: animate_car_left_three 16s linear infinite;
+  z-index: 4;
+}
+
+@keyframes animate_car_left_three {
+  0% {
+    transform: translatex(0%);
+  }
+  90%, 100% {
+    transform: translatex(calc(-200vw + 200px));
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(#a9daf7, #fff, #fff) no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */
