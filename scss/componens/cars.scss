@@ -1,0 +1,164 @@
+.car_rigth_one {
+    background: url(/img/cars/pack_cars_right/right_green_car.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 200px;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    left: -10%;
+    animation: animate_car_rigth_one 10s linear infinite;
+    z-index: 5;
+}
+
+@keyframes animate_car_rigth_one {
+    0% {
+        transform: translatex(0%);
+    }
+
+    90%,
+    100% {
+        transform: translatex(calc(100vw + 20vw));
+    }
+
+}
+
+.car_rigth_two {
+    background: url(/img/cars/pack_cars_right/right_blue_car.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 200px;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    left: -10%;
+    animation: animate_car_rigth_two 12s linear infinite;
+    z-index: 5;
+}
+
+@keyframes animate_car_rigth_two {
+    0% {
+        transform: translatex(0%);
+    }
+
+    90%,
+    100% {
+        transform: translatex(calc(100vw + 19vw));
+    }
+
+}
+
+.car_rigth_three {
+    background: url(/img/cars/pack_cars_right/right_red_car.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 200px;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    left: -50%;
+    animation: animate_car_rigth_three 15s linear infinite;
+    z-index: 5;
+}
+
+@keyframes animate_car_rigth_three {
+    0% {
+        transform: translatex(0%);
+    }
+
+    90%,
+    100% {
+        transform: translatex(calc(100vw + 60vw));
+    }
+
+}
+
+
+.car_left_one {
+    background: url(/img/cars/pack_cars_left/left_grey_car.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 200px;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    bottom: 35px;
+    right: -10%;
+    animation: animate_car_left_one 13s linear infinite;
+    z-index: 4;
+}
+
+@keyframes animate_car_left_one {
+    0% {
+        transform: translatex(0%);
+    }
+
+    90%,
+    100% {
+        transform: translatex(calc(-200vw + 200px));
+    }
+
+}
+
+
+.car_left_two {
+    background: url(/img/cars/pack_cars_left/left_red_car.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 200px;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    bottom: 35px;
+    right: -10%;
+    animation: animate_car_left_two 17s linear infinite;
+    z-index: 4;
+}
+
+@keyframes animate_car_left_two {
+    0% {
+        transform: translatex(0%);
+    }
+
+    90%,
+    100% {
+        transform: translatex(calc(-200vw + 200px));
+    }
+
+}
+
+
+.car_left_three {
+    background: url(/img/cars/pack_cars_left/left_blue_car.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-width: 200px;
+    width: 10%;
+    height: 10%;
+    position: fixed;
+    bottom: 35px;
+    right: -15%;
+    animation: animate_car_left_three 16s linear infinite;
+    z-index: 4;
+}
+
+@keyframes animate_car_left_three {
+    0% {
+        transform: translatex(0%);
+    }
+
+    90%,
+    100% {
+        transform: translatex(calc(-200vw + 200px));
+    }
+
+}
